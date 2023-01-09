@@ -39,7 +39,12 @@
     font-size: 22px;
     text-decoration: none;
 }
-
+.links li:hover{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: #000;
+}
 .input {
     width: 28vw;
     border-radius: 7px;
@@ -811,226 +816,15 @@ h3 {
 .dropdown:hover .dropbtn {
     background-color: rgb(22, 22, 150);
 }
-
-/* responsive */
-
-
-
-@media screen and (max-width: 700px) {
-
-    .nav {
-        height: 26vh;
-        justify-content: space-between;
-    }
-
-    .nav .createAcc{
-        margin-left: 3vw;
-    }
-
-    .nav .Login{
-        margin-right: 5vw;
-    }
-
-    .img {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .img img {
-        height: 11vh;
-        width: 20vw;
-    }
-
-    .head {
-        margin-top: 0;
-        font-size: 1.3rem;
-    }
-
-    .linkss {
-        justify-content: space-between;
-    }
-
-    .linkss li {
-        margin-left: 16px;
-        list-style: none;
-        font-size: 15px;
-    }
-
-    /* .search {
-        margin-right: 48vw;
-        margin-top: 12rem;
-        width: 100%;
-        height: 5vh;
-    } */
-
-    .searchbox {
-        width: 67vw;
-        padding-left: 31px;
-        height: 37px;
-        border: 1px solid black;
-    }
-
-    .search span {
-        position: absolute;
-        left: 18vw;
-        cursor: pointer;
-    }
-
-    .label {
-        width: 40px;
-    height: 0;
-    position: fixed;
-    top: 6vh;
-    z-index: 1000;
-    left: 81vw;
-    }
-
-    .ball {
-        width: 11px;
-        height: 10px;
-        background-color: white;
-        top: 0px;
-    }
-
-    .checkbox {
-        left: 81vw;
-        top: 6vh;
-    }
-
-    .caption {
-        align-items: center;
-
-    }
-
-    .caption h2 {
-        letter-spacing: 3px;
-        font-weight: 600;
-        font-size: 1.77rem;
-        padding-left: 4vw;
-    }
-
-    .mod {
-        height: 29vh;
-        width: 34vh;
-        position: absolute;
-        margin-top: 0;
-        left: 21vw;
-        top: 29vh;
-    }
-
-    .mod .navmodel {
-        height: 29vh;
-        width: 34vh;
-    }
-
-    .non-fix-section {
-        margin-top: 0;
-    }
-
-    .down {
-        height: 26vh;
-    }
-
-    .pos{
-        height: 26vh;
-    }
-
-    .pos #myVideo {
-        height: 26vh;
-    }
-
-    #myBtn {
-        margin-top: 22vh;
-        height: 3vh;
-        font-size: 10px;
-        width: 20vw;
-        padding: 0;
-        font-size: 10px;
-    }
-
-    .but {
-        height: 9vh;
-    }
-
-    .dropdown {
-        height: 31px;
-        width: 18vw;
-    }
-
-    .dropdown .dropbtn {
-        height: 31px;
-        width: 18vw;
-    }
-
-    
-
-    .dropbtn {
-        padding: 0;
-        font-size: 7px;
-    }
-
-    .links {
-        height: 4vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .links li {
-        font-size: 15px;
-        margin-left: 14px;
-    }
-
-    .linkss{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .buypack .linkss a{
-        font-size: 18px;
-        text-decoration: underline;
-    }
-
-    .buypack .linkss{
-        margin-right: 13px;
-    }
-
-    .writingsection ul{
-    padding: 1px 0px 0px 34px;
-    font-size: 1rem;
-    }
-
-    .writingsection ul li {
-        margin-top: 44px;
-    }
-
-    .buypack{
-        height: 64vh;
-        margin-top: 4vh;
-
-    }
-
-    /* typewriter */
-
-    .text.first-text{
-        font-size: 1.4rem;
-        top: -17vh;
-    }
-
-    .text.sec-text{
-        font-size: 1.4rem;
-        top: -17vh;
-        left: -9vw;
-        height: 5vh;
-        width: 44vw;
-    }
-
+.text.first-text{
+    font-size: 2.5rem;
+    top: 12vh;
 }
-.k{
-    background-color: #05054f;
-    margin-top: -3rem;
-  }
 
+.text.sec-text{
+    font-size: 2.5rem;
+    top: 12vh;
+    left: 18vw;
+    height: 5vh;
+    width: 44vw;
+}
