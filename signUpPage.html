@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\logo.png">
+    <link rel="stylesheet" href="buble-login.css">
+</head>
+
+<body class="page">
+    <div class="container">
+        <div class="drop">
+            <div class="content">
+                <h3>Sign-Up</h3>
+                <div class="form">
+                    <div class="inputBox">
+                        <input type="text" id="userInp" placeholder="User name" >
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" id="userNum" placeholder="Personal number" >
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="emailInp" placeholder="Email" >
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="passInp" placeholder="Password" >
+                    </div>
+                    <!-- <div class="inputBox">
+                        <input type="password" placeholder="Confirm-Password" required>
+                    </div> -->
+                    <div class="inputBox">
+                        <input type="submit" id="sub_btn" value="Sign-Up">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btns">Forget password</a> -->
+        <a href="loginPage.html" class="btns signup">Log-in</a>
+        <button type="submit" class=" btns1" id="withGoogle">sign-in with
+            google</button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+
+    <script type="module">
+
+        import { signInWithPopup, GoogleAuthProvider, signInWithRedirect, getRedirectResult, getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        import { initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+
+        const firebaseApp = firebase.initializeApp( {               // firebaseConfig
+            apiKey: "AIzaSyCzqrjYKhZOG9FFPposRs67LE8TkY-cimk",
+            authDomain: "forpractise-6299f.firebaseapp.com",
+            databaseURL: "https://forpractise-6299f-default-rtdb.firebaseio.com",
+            projectId: "forpractise-6299f",
+            storageBucket: "forpractise-6299f.appspot.com",
+            messagingSenderId: "675051414322",
+            appId: "1:675051414322:web:40329d1994d1a57ef5ad2b"
+        });
+
+        const db = firebaseApp.firestore()
+        const auth = firebaseApp.auth()
+
+        // const app = initializeApp(firebaseConfig)
+        // const auth = getAuth(app)
+        const provider = new GoogleAuthProvider(auth);   // const provider = new GoogleAuthProvider(app);
+
+
+        const username = document.getElementById("userInp")
+        const usernumber = document.getElementById("userNum")
+        const email = document.getElementById("emailInp")
+        const pass = document.getElementById("passInp")
+        const submit = document.getElementById("sub_btn")
+        const signInWithGoogle = document.getElementById("withGoogle")
+
+
+        function isEmptyOrSpace(str) {
+            return str === null || str.match(/^ *$/) !== null
+        }
+
+        function Validation() {
+            const nameregx = /^[a-zA-Z\s]+$/
+            const emailregx = /^[A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z]{3,}$/
+            const passregx = /^[a-zA-Z0-9.!@#$]{8,}$/
+            const numregx = /^[789][0-9]{9}$/
+
+            if (isEmptyOrSpace(username.value) || isEmptyOrSpace(email.value) || isEmptyOrSpace(pass.value) || isEmptyOrSpace(usernumber.value)) {
+                alert("some field is empty")
+                return false
+            }
+
+            if (!nameregx.test(username.value)) {
+                alert("only alphabets are allowed")
+                return false
+            }
+
+            if (!numregx.test(usernumber.value)) {
+                console.log(usernumber)
+                alert("only alphabets are allowed")
+                return false
+            }
+
+            if (!emailregx.test(email.value)) {
+                alert("please right correct email")
+                return false
+            }
+            if (!passregx.test(pass.value)) {
+                alert("password should be consist of alphabet, numbers and other keywords")
+                return false
+            }
+            return true
+        }
+
+        function saveData() {
+            db.collection('UserList').add({
+                username: username.value,
+                email: email.value,
+                usernumber:usernumber.value,
+                pass: pass.value
+            }).then(() => {
+                console.log("added in database")
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+
+        function RegisterUser() {
+            if (!Validation()) {
+                console.log("error");
+                return
+            }
+            createUserWithEmailAndPassword(auth, email.value, pass.value).then(() => {
+                alert("user created successfully")
+                console.log("user created successfully")
+                saveData();
+                window.location = "loginPage.html"
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+
+        function withGoogle() {
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    const credential = GoogleAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    const user = result.user;
+                    window.location = "index.html"
+                }).catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    const email = error.customData.email;
+                    const credential = GoogleAuthProvider.credentialFromError(error);
+                });
+        }
+
+        submit.addEventListener('click', RegisterUser)
+        signInWithGoogle.addEventListener('click', withGoogle)
+
+
+    </script>
+
+
+</body>
+
+</html>

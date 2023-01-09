@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images\logo.png">
+    <link rel="stylesheet" href="buble-login.css">
+</head>
+
+<body class="page">
+    <div class="container">
+        <div class="drop">
+            <div class="content">
+                <h3>Log-In</h3>
+                <div class="form">
+                    <div class="inputBox">
+                        <input type="text" id="emailInp" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="passInp" placeholder="password">
+                    </div>
+                    <div class="custom-control custom-switch">
+
+                        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+
+                        <input type="checkbox" class="form-check-input" id="customSwitch1">
+                        <label class="form-check-label mb-2" for="customSwitch1">keep me logged in</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" id="sub_btn" value="Log in">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btns">Forget password</a> -->
+        <a href="signUpPage.html" class="btns signup">Sign-up</a>
+        <a href="forgot.html"><button type="submit" class=" btns1" id="withGoogle">Forgotten Password?</button></a>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+
+    <script type="module">
+        const firebaseApp = firebase.initializeApp({
+            apiKey: "AIzaSyCzqrjYKhZOG9FFPposRs67LE8TkY-cimk",
+            authDomain: "forpractise-6299f.firebaseapp.com",
+            databaseURL: "https://forpractise-6299f-default-rtdb.firebaseio.com",
+            projectId: "forpractise-6299f",
+            storageBucket: "forpractise-6299f.appspot.com",
+            messagingSenderId: "675051414322",
+            appId: "1:675051414322:web:40329d1994d1a57ef5ad2b"
+        });
+        const db = firebaseApp.firestore();
+        const auth = firebaseApp.auth();
+
+        const email = document.getElementById("emailInp")
+        const pass = document.getElementById("passInp")
+        const submit = document.getElementById("sub_btn")
+
+        function isUserAlredyExist(){
+            auth.signInWithEmailAndPassword(email.value, pass.value).then(()=>{
+                login();
+            }).catch(()=>{
+                alert("This email-id is not Registered")
+                console.log("failed");
+            })
+        }
+
+        function login(user) {
+            let keepLoggingIn = document.getElementById("customSwitch1").checked
+
+            if (!keepLoggingIn) {
+                sessionStorage.setItem('user', JSON.stringify(user))
+                window.location = "index.html"
+            } else {
+                localStorage.setItem('keepLoggingIn', 'yes')
+                localStorage.setItem('user', JSON.stringify(user))
+                window.location = "index.html"
+            }
+        }
+
+        submit.addEventListener('click', isUserAlredyExist)
+
+    </script>
+
+
+</body>
+
+</html>

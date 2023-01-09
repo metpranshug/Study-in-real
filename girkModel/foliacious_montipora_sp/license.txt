@@ -1,0 +1,11 @@
+Model Information:
+* title:	Foliacious Montipora sp.
+* source:	https://sketchfab.com/3d-models/foliacious-montipora-sp-d26a10a601e34570a5571714a422e226
+* author:	thehydrous (https://sketchfab.com/thehydro.us)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Foliacious Montipora sp." (https://sketchfab.com/3d-models/foliacious-montipora-sp-d26a10a601e34570a5571714a422e226) by thehydrous (https://sketchfab.com/thehydro.us) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

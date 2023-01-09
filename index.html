@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyInReal - LandingPage</title>
+    <link rel="shortcut icon" href="images\logo.png">
+    <link rel="stylesheet" href="LandingPage.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="img">
+            <img src="images\logo.png" alt="">
+            <h1 class="head">STUDY IN REAL</h1>
+        </div>
+        <h6 id="hh" style="display: none;"></h6>
+        <div class="links">
+            <li> <a href="">About</a> </li>
+            <li> <a class="nav-link btn-primary btn" style="font-size: medium;text-decoration: none;color: white;" href="explore.html">Explore</a> </li>
+            <li class="createAcc"> <a  class="nav-link" href="#" id="userlink"  style="text-decoration: none;color: white;"></a> </li>
+            <li class="Login"> <a  class="nav-link" href="#" id="signoutlink"  style="text-decoration: none;color: white;"></a> </li>
+            <li> <a href="">Contact Us</a> </li>
+            <li> <a href="">Demo</a> </li>
+            <li><svg  onclick="changeMode()" class="sun" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 14.984375 0.98632812 A 1.0001 1.0001 0 0 0 14 2 L 14 5 A 1.0001 1.0001 0 1 0 16 5 L 16 2 A 1.0001 1.0001 0 0 0 14.984375 0.98632812 z M 5.796875 4.7988281 A 1.0001 1.0001 0 0 0 5.1015625 6.515625 L 7.2226562 8.6367188 A 1.0001 1.0001 0 1 0 8.6367188 7.2226562 L 6.515625 5.1015625 A 1.0001 1.0001 0 0 0 5.796875 4.7988281 z M 24.171875 4.7988281 A 1.0001 1.0001 0 0 0 23.484375 5.1015625 L 21.363281 7.2226562 A 1.0001 1.0001 0 1 0 22.777344 8.6367188 L 24.898438 6.515625 A 1.0001 1.0001 0 0 0 24.171875 4.7988281 z M 15 8 A 7 7 0 0 0 8 15 A 7 7 0 0 0 15 22 A 7 7 0 0 0 22 15 A 7 7 0 0 0 15 8 z M 2 14 A 1.0001 1.0001 0 1 0 2 16 L 5 16 A 1.0001 1.0001 0 1 0 5 14 L 2 14 z M 25 14 A 1.0001 1.0001 0 1 0 25 16 L 28 16 A 1.0001 1.0001 0 1 0 28 14 L 25 14 z M 7.9101562 21.060547 A 1.0001 1.0001 0 0 0 7.2226562 21.363281 L 5.1015625 23.484375 A 1.0001 1.0001 0 1 0 6.515625 24.898438 L 8.6367188 22.777344 A 1.0001 1.0001 0 0 0 7.9101562 21.060547 z M 22.060547 21.060547 A 1.0001 1.0001 0 0 0 21.363281 22.777344 L 23.484375 24.898438 A 1.0001 1.0001 0 1 0 24.898438 23.484375 L 22.777344 21.363281 A 1.0001 1.0001 0 0 0 22.060547 21.060547 z M 14.984375 23.986328 A 1.0001 1.0001 0 0 0 14 25 L 14 28 A 1.0001 1.0001 0 1 0 16 28 L 16 25 A 1.0001 1.0001 0 0 0 14.984375 23.986328 z"/></svg>
+        </div>
+
+
+    </div>
+    <div class="non-fix-section">
+        <div class="search">
+            <!-- <span class="material-symbols-outlined" class="searchboxicon">search</span> -->
+            <!-- <input type="text" placeholder="What you want to learn today" class="searchbox"> -->
+        </div>
+
+        <div class="caption">
+            <span class="text first-text">STUDY
+                <!-- <a href="signUpPage.html">
+                <button class="Gets_Started">Gets
+                        Started</button>
+                </a> --><p class="paragraph">Explore Your Academics In A New Way Like Never Before!</p>
+            </span><span class="text sec-text"></span>
+
+            <div class="mod">
+                <model-viewer class="navmodel" src="models/math/scene.gltf" auto-rotate ar shadow-intensity="1"
+                    touch-action="pan-y" camera-controls title="tap and do some operation"></model-viewer>
+            </div>
+        </div>
+
+        <!-- <div class="down">
+            <div class="pos">
+                <video muted loop id="myVideo">
+                    <source src="models/New folder/WhatsApp Video 2022-10-26 at 2.46.33 PM.mp4" type="video/mp4">
+                </video>
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+        </div>
+        <div class="but">
+            <div class="dropdown">
+                <button class="dropbtn">EXPLORE BIOLOGY</button>
+                <div class="dropdown-content">
+                    <a href="#">Human Skeleton</a>
+                    <a href="onSelectTopic.html">Elbow Joint</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">REAL MECHANICS</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> PHYSICS </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">MATHEMATICS</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+        </div> -->
+
+        <div class="demo_video_container">
+            <div class="title"><span>The Only Platform Which Gives You The Opportunity to Explore the Academic Concepts
+                    You Learn.</span></div>
+            <div class="grid-container">
+                <div class="item1">
+                    <img class="number_png" src="gifs/number(1).png" alt="">
+                    <div class="para">
+                        <p>Leaned from books or teacher?</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <img class="number_png" src="gifs/number (2).png" alt="">
+                    <div class="para">
+                        <p>Watch our explanatory videos</p>
+                    </div>
+                </div>
+                <div class="item3">
+                    <img class="number_png" src="gifs/number (3).png" alt="">
+                    <div class="para">
+                        <p>Explore, Understand and Learn Better with 3D Stimulations</p>
+                    </div>
+                </div>
+                <div class="item4">
+                    <img class="number_png" src="gifs/number (4).png" alt="">
+                    <div class="para">
+                        <p>Practice them with Challenging Quizzes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_section">
+                <div class="grid1">
+                    <video controls autoplay loop id="firstVideo">
+                        <source src="3videos/ElbowjointVideo.mp4" type="video/mp4">
+                    </video>
+                    <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+                </div>
+                <div class="grid2">
+
+                </div>
+                <div class="grid1">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="three_grid">
+            <div class="container1">
+                <img src="gifs/old businessman in classical suit and glasses showing v sign.png" alt="">
+                <span>TEACHER</span>
+                <ul>
+                    <li>For being able to teach your students with the best tools!</li>
+                    <li>Saves on time and effort leading to better student teacher bonding.</li>
+                    <li>3D Content will help your students imagine the concepts better.</li>
+                    <li>Better results expected as pupils can visualize concepts better.</li>
+                </ul>
+            </div>
+            <div class="container1">
+                <img src="gifs/young women sitting with laptop.png" alt="">
+                <span>STUDENT</span>
+                <ul>
+                    <li>3D interactive simulations helping you visualize. academic concepts better.</li>
+                    <li>You will be able to Explore what you learn and practice with plethora of quizzes.</li>
+                    <li>Fun,interactive and easy to use platform to help you go step by step and study effectively.
+                    </li>
+                </ul>
+            </div>
+            <div class="container1">
+                <img src="gifs/black backpack.png" alt="">
+                <span>INSTITUTION</span>
+                <ul>
+                    <li>Both your Students and Teachers will gain a lot from this technology.</li>
+                    <li>Partnering with “Study In Real” is an excellent opportunity to provide students with great
+                        learning experience.</li>
+                    <li>Guaranteed better results of Students and ease for Teachers</li>
+                    <li>One of a kind in its domain</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="buypack">
+            <h1>Why chose Study In Real?</h1>
+            <div class="writingsection">
+                <ul>
+                    <li> Learn with Interactive 3D model simulations and visually explanatory videos. </li>
+                    <li> A chance to actually Explore the concepts you learn and practice with plethora of quizzes.
+                    </li>
+                    <li> An opportunity to Study with Exploration like never before. A chance for holistic learning like
+                        never before. </li>
+                    <li> Mind-hand coordination leading to better conceptual understanding. </li>
+                    <li> Fun, appealing and interactive methodology for Students to Learn and for Teachers to Teach.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="introduction_section">
+            <h1>Our Teams</h1>
+            <div class="section1">
+                <div class="image_and_caption">
+                    <img src="gifs/Afreen 1.png" alt="">
+                    <span>I am a second year undergraduate student at IGDTUW with keen interest in UI/UX, 3D Content
+                        Creation, My Vision is to help every school going student visualise the academic concepts that
+                        are being taught to them in schools without any difficulty and with affordable resources</span>
+                </div>
+                <p>Afreen Siddiqui Founder, CEO, and Director</p>
+            </div>
+            <div class="section1">
+                <div class="image_and_caption">
+                    <span>I am a second year undergraduate student at IGDTUW. I am an aspiring content writer.
+                        Recently,I have been working on ML and Data Science. I like to paint and dance in my free
+                        time.</span>
+                    <img src="gifs/Megha 1.png" alt="">
+                </div>
+                <p class="right">Megha Agarwal, Co-Founder</p>
+            </div>
+            <div class="section1">
+                <div class="image_and_caption">
+                    <img src="gifs/Roshan 1.png" alt="">
+                    <span>I am Roshan Lal Prajapati, Technical Head at Study In Real, currently I am doing Btech from
+                        TAT (Bhubaneswar). I am a developer with expertise in working with Web Development like
+                        javaScript and ReactJs. I am doing the development and authentication part in this
+                        company.</span>
+                </div>
+                <p>Roshan Lal Prajapati, Technical Head</p>
+            </div>
+            <div class="section1">
+                <div class="image_and_caption">
+                    <span>I Pranshu Gahlawat, Technical Head at Study In Real, I am in 9th grade. I have expertise Web
+                        Dev, HTML, CSS, PHP, A-frame, Python OpenCV, Robotics & ML. I am working in the 3d model
+                        integration and website developing part of this company</span>
+                    <img src="gifs/Pranshu 1.png" alt="">
+                </div>
+                <p class="right">Pranshu Gahlawat, Technical Head </p>
+            </div>
+        </div>
+
+        <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+            <footer>
+                <div class="row my-5 justify-content-center py-5">
+                    <div class="col-11">
+                        <div class="row ">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a">
+                                <h3 class=" mb-md-0 mb-5 bold-text"></h3>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 bold-text "><b>Contact Us</b></h6>
+                                <ul class="list-unstyled">
+                                    <li>+91 98184 72407</li>
+                                    <small> <span><i
+                                        class="fa fa-envelope" aria-hidden="true"></i></span> <a
+                                    href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                                    afreen@studyinreal.com </a> </small>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4  bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                                <p class="mb-1"></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <!-- <div
+                                class="col-xl-8 col-md-4 col-sm-4 col-auto  my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                                <p class="social mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></span> <span class="mx-2"></span> <span
+                                        class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span
+                                        class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p>
+                                <small class="rights"><span>&#174;</span>
+                                    Afreen All Right Reserved</small>
+                            </div> -->
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                                <h6 class="mt-55 mt-2 bold-text"><b>Afreen Siddiqui</b></h6><small> <span><i
+                                            class="fa fa-envelope" aria-hidden="true"></i></span> <a
+                                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                                        teamstudyinreal@gmail.com </a> </small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+
+        const userlink = document.getElementById("userlink")
+        const signoutlink = document.getElementById("signoutlink")
+        const header = document.getElementById("hh")
+        var currentUser = null
+
+
+
+        function signOut() {
+            sessionStorage.removeItem('user')
+            localStorage.removeItem('user')
+            localStorage.removeItem('keepLoggingIn')
+            window.location = "index.html"
+        }
+
+        function getUserName() {
+            const keepLoggingIn = localStorage.getItem("keepLoggingIn")
+
+            if (keepLoggingIn == 'yes') {
+                currentUser = localStorage.getItem('user')
+            } else {
+                currentUser = sessionStorage.getItem('user')
+            }
+        }
+
+        window.onload = function () {
+            getUserName()
+
+            if (currentUser == null) {
+                userlink.innerText = "Gets Started"
+                userlink.classList.replace("nav-link", "btn")
+                userlink.classList.add("btn-primary")
+                userlink.href = "signUpPage.html"
+
+                signoutlink.innerText = "Login"
+                signoutlink.classList.replace("nav-link", "btn")
+                signoutlink.classList.add("btn-success")
+                signoutlink.href = "loginPage.html"
+            }
+            else {
+                userlink.innerText = "Welcome"
+                // header.innerText = "welcome "
+                userlink.classList.replace("nav-link", "btn")
+                userlink.classList.add("btn-primary")
+                userlink.href = "#"
+
+                signoutlink.innerText = "Sign out"
+                signoutlink.classList.replace("nav-link", "btn")
+                signoutlink.classList.add("btn-success")
+                signoutlink.href = "javascript:signOut()"
+            }
+        }
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="landingpage.js"></script>
+</body>
+
+</html>
