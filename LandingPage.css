@@ -133,13 +133,13 @@
 .text.sec-text:before{
     content: "";
     position: absolute;
-    top: 0;
+    top: -2vh;
     left: 0;
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     background-color: white;
     border-left: 4px solid #4070F4;
-    animation: animate 4s steps(8) infinite;
+    animation: animate 3s steps(8) infinite;
 }
 
 @keyframes animate{
@@ -847,7 +847,7 @@ h3 {
 .text.sec-text{
     font-size: 4.5rem;
     top: 15vh;
-    margin-left: 100px;
+    left: -22vh;
     height: 5vh;
-    width: 30vh;;
+    width: 40vh;;
 }

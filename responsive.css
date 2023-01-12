@@ -1,7 +1,7 @@
 @import url(LandingPage.css);
 @media only screen and (max-width:1900px){
     .text.sec-text{
-        margin-left: 100px;
+        left: -15vh;
     }
     .video_section .grid2{
         margin-left:55vh;
@@ -36,9 +36,6 @@
       } 
 }
 @media only screen and (max-width:1815px){
-  .text.sec-text{
-    margin-left: 100px;
-}
 .video_section .grid2{
     margin-left:40vh;
     width: 70%;
@@ -71,9 +68,9 @@
     margin-top: 10vh;
   } 
 }
-@media only screen and (max-width:1580px){
+@media only screen and (max-width:1590px){
     .text.sec-text{
-        margin-left: 250px;
+        left: -1vh;
     }
     .video_section .grid2{
       margin-left: 40%;
@@ -119,7 +116,7 @@
 }
 @media only screen and (max-width:1290px){
   .text.sec-text{
-    margin-left: 350px;
+    left: 10vh;
   }  
   .three_grid .container1{
     height: 780px;
@@ -149,5 +146,18 @@
   } 
 .video_section{
   margin-top: 100px;
+}
+}
+@media only screen and (max-width:1135){
+  .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: -2vh;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+    border-left: 4px solid #4070F4;
+    animation: animate 3s steps(8) infinite;
 }
 }
