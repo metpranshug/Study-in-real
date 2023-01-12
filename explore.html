@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyInReal - Help</title>
+    <title>Study In Real - Home</title>
 
-    <link rel="shortcut icon" href="icons\ec511657cff446069fa7be0936807de6.png">
+    <link rel="shortcut icon" href="images\logo.png">
 
     <link rel="stylesheet" href="style.css">
-    
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-</head> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+
 <body>
+
+    <div class="nav">
+        <h6 id="hh" style="display: none;"></h6>
+        <div class="links">
+            <li> <a class="upNavText" href="about.html">About</a> </li>
+            <li> <a class="upNavText" href="#">Explore</a> </li>
+            <li class="createAcc"> <a href="#" id="userlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
+            <li class="Login"> <a href="#" id="signoutlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
+            <li> <a class="upNavText" href="contact.html">Contact Us</a> </li>
+            <li> <a class="upNavText" href="help.html">Help</a> </li>
+            <!-- <li> <a href="">Login</a> </li> -->
+        </div>
+    </div>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <a href="LandingPage.html">  <img src="icons\ec511657cff446069fa7be0936807de6.png" alt="">    </a>
+                    <a href="index.html"> <img width="30px" height="30px" src="images/logo-large.png" alt=""> </a>
                 </span>
 
-                <div class="text logo-text"> <a href="LandingPage.html">  
-                    <span class="name">Study</span>
-                    <span class="profession">In Real</span> </a>
+                <div class="text logo-text"> <a href="index.html">
+                        <span class="name" style="color: rgb(68, 161, 240);">Study</span>
+                        <span class="profession" style="color: rgb(68, 161, 240);">In Real</span> </a>
                 </div>
             </div>
 
@@ -36,64 +64,58 @@
             <div class="menu">
 
                 <li class="search-box">
-                    <i class='bx bx-search-alt icon' title="" ></i>
+                    <i class='bx bx-search-alt icon' title=""></i>
                     <input class="search" type="text" placeholder="Search here...">
                 </li>
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="index.html">
-                            <i class='bx bxs-home icon' title="home"></i>
-                            <span class="text nav-text">Home</span>
+                        <a href="#">
+                            <i class='bx bxs-home icon' title="Explore"></i>
+                            <span class="text nav-text">Explore</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="program.html">
+                        <a href="videos.html">
                             <span class="material-symbols-outlined icon" title="Explantory Videos">play_circle</span>
                             <span class="text nav-text">Explantory Videos</span>
                         </a>
                     </li>
 
+
                     <li class="nav-link">
-                        <a href="saved.html">
+                        <a href="help.html">
                             <span class="material-symbols-outlined icon" title="Help">forum</span>
                             <span class="text nav-text">Help</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="Quiz.html">
+                        <a href="quizSelect.html">
                             <i class='bx bxs-sleepy icon' title="Quizzes"></i>
                             <span class="text nav-text">Quizzes</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="animated.html">
-                            <span class="material-symbols-outlined icon">question_mark</span>
+                        <a href="doubts.html">
+                            <span class="material-symbols-outlined icon" title="Doubts">question_mark</span>
                             <span class="text nav-text">Doubts</span>
                         </a>
                     </li>
 
-                    
+
 
                     <li class="nav-link">
-                        <a href="3dContent.html">
-                            <i class='bx bx-shape-polygon icon' title="content"></i>
+                        <a href="contentselect.html">
+                            <i class='bx bx-shape-polygon icon' title="3d Content"></i>
                             <span class="text nav-text">3d Content</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="game.html">
-                            <i class='bx bxs-game icon' title="Games"></i>
-                            <span class="text nav-text">Games On Topics</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="animated.html">
+                        <a href="notes.html">
                             <span class="material-symbols-outlined icon" title="Notes">description</span>
                             <span class="text nav-text">Notes</span>
                         </a>
@@ -107,10 +129,16 @@
                 </ul>
             </div>
         </div>
-
     </nav>
 
-    <div class="upSideNav">
+    <div class="exploretag">
+        <h2>EXPLORE</h2>
+    </div>
+
+
+
+    <!-- <div class="upSideNav">
+
         <ul class="upNavUl">
             <li class="upNavLi">
                 <a href="contactUs.html">
@@ -136,22 +164,372 @@
                 <a href="help.html">
                     <span class="upNavText">Help</span>
                 </a>
-                <li class="upNavLi">
-                    <a href="profile.html">
-                        <span class="upNavText">Profile</span>
-                    </a>
-                </li>
+            </li>
+            <li class="upNavLi">
+                <a href="profile.html">
+                    <span class="upNavText">Profile</span>
+                </a>
             </li>
         </ul>
-    </div>
-    <h1 style="color: #1E3770;text-align: center;">Explore</h1>
-    <div class="content">
-        <div style="margin-left: 5%;">Explore your academics in a brand new way with 3D models,quizzes and easy notes!!
+    </div> -->
 
-            Have a look at our vast menu of different subjects ranging from physics to maths to biology that will help you gain an insight into perks and services offered by Study In Real!!</div>
+
+    <div class="tags">
+        <p>Have a look at our vast menu of different subjects ranging from physics to maths to Biology.</p>
     </div>
+
+    
+    <section class="product">
+        <h2 class="product-category">Subjects</h2>
+        <button class="pre-btn"><img src="images/arrow.png"></button>
+        <button class="nxt-btn"><img src="images/arrow.png"></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/Biology.png" style="border-radius: 10px;;" class="product-thumb" alt="">
+                    <span class="card-btn">Biology</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/Physics.png" style="border-radius: 10px;" class="product-thumb" alt="">
+                    <span class="card-btn">Physics</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                        <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                        <span class="card-btn">Comming Soon</span>
+
+                </div>
+                <div class="product-Titleo">
+                    <h2 class="product-brand"></h2>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="product">
+        <h2 class="product-category">3D Content</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/elbo.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <a href="elbow-content.html"><span class="card-btn">Elbow Joint</span></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand"></h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/brain.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <a href="brain-content.html"><span class="card-btn">Human Brain</span></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/stoma.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Comming Soons</span>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>
+    </section>
+
+
+    <section class="product">
+        <h2 class="product-category">Quiz Time</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/quiz1.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <a href="elbow-quiz.html"><span class="card-btn">Elbow Joint</span></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/quiz2.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Nervous System</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>            
+    </section>
+
+    <section class="product">
+        <h2 class="product-category">Direct Notes</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/Component 7.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Nervous System</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand"></h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/Group 14.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Digestion</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/Component 8 (1).png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Elbow Joint</span>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Drop down subject section -->
+    <!-- <div class="subject-dropdown">
+        <div class="dropdown-wrap">
+            <div class="dropdown">
+                <button class="dropbtn">Biology</button>
+                <div class="dropdown-content">
+                    <a href="onSelectTopic.html">Skeleton</a>
+                    <a href="#">Bones</a>
+                    <a href="#">Tree</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="models" class="models">
+        <model-viewer src="models/elbow joint.glb" shadow-intensity="1.5" camera-controls touch-action="pan-y" auto-rotate>
+        </model-viewer>
+    </div> -->
+    
+
     <script src="script.js"></script>
-    <script src="style.css"></script>
-    <script src="LandingPage.css"></script>
+    <script src="navBarFirebase.js"></script>
 </body>
+
 </html>

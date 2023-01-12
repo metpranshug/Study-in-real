@@ -97,7 +97,7 @@ AFRAME.registerComponent('info-message', {
       wrapper.classList.add('a-info-message-container');
       this.infoButton = infoButton = document.createElement('button');
       infoButton.className = 'a-info-message-button';
-      infoButton.setAttribute('title', 'Information about this experience');
+      infoButton.setAttribute('title', 'Information about this Model');
       // Insert elements.
       wrapper.appendChild(infoButton);
       infoButton.addEventListener('click', function (evt) {

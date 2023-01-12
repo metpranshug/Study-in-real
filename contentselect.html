@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study In Real - Help</title>
+    <title>Study In Real - Select Content</title>
     <script
         src="https://cdn.jsdelivr.net/gh/aframevr/aframe@090b5f8f0abe949ddcfdbbc14c75822322a2dd53/dist/aframe-master.min.js"></script>
     <script src="index.js"></script>
@@ -38,7 +38,7 @@
             <li class="createAcc"> <a href="#" id="userlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
             <li class="Login"> <a href="#" id="signoutlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
             <li> <a class="upNavText" href="contact.html">Contact Us</a> </li>
-            <li> <a class="upNavText" href="#">Help</a> </li>
+            <li> <a class="upNavText" href="help.html">Help</a> </li>
             <!-- <li> <a href="">Login</a> </li> -->
         </div>
     </div>
@@ -70,8 +70,8 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="explore.html">
-                            <i class='bx bxs-home icon' title="home"></i>
-                            <span class="text nav-text">Home</span>
+                            <i class='bx bxs-home icon' title="Explore"></i>
+                            <span class="text nav-text">Explore</span>
                         </a>
                     </li>
 
@@ -84,7 +84,7 @@
 
 
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="help.html">
                             <span class="material-symbols-outlined icon" title="Help">forum</span>
                             <span class="text nav-text">Help</span>
                         </a>
@@ -99,7 +99,7 @@
 
                     <li class="nav-link">
                         <a href="doubts.html">
-                            <span class="material-symbols-outlined icon">question_mark</span>
+                            <span class="material-symbols-outlined icon" title="Doubts">question_mark</span>
                             <span class="text nav-text">Doubts</span>
                         </a>
                     </li>
@@ -107,8 +107,8 @@
 
 
                     <li class="nav-link">
-                        <a href="contentselect.html">
-                            <i class='bx bx-shape-polygon icon' title="content"></i>
+                        <a href="#">
+                            <i class='bx bx-shape-polygon icon' title="3d Content"></i>
                             <span class="text nav-text">3d Content</span>
                         </a>
                     </li>
@@ -129,7 +129,41 @@
             </div>
         </div>
     </nav>
-    <h1 style="text-align: center;">Help</h1>
+    <section class="product">
+        <h2 class="product-category" style="text-align: center;margin-left: 20vh;margin-top: 15%;">Select 3D Content</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/elbo.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <a href="elbow-content.html"><span class="card-btn">Elbow Joint</span></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand"></h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/brain.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <a href="brain-content.html"><span class="card-btn">Human Brain</span></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gifs/stoma.png" class="product-thumb" alt="" style="border-radius: 10px; margin-right: 20px;">
+                    <span class="card-btn">Comming Soons</span>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image" style="background-color: rgb(63, 162, 204);border-radius: 10px;">
+                    <h3 style="text-align: center;margin-top: 15%;color: white;font-weight: 1000;font-size: xx-large;">Comming Soon</h3>
+                    <span class="card-btn">Comming Soon</span>
+
+                </div>
+            </div>
+    </section>
 
     <script src="script.js"></script>
     <script src="navBarFirebase.js"></script>

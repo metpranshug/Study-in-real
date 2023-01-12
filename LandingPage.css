@@ -1,5 +1,6 @@
 .head {
-    margin-top: 36px;
+    font-size: 2.5rem;
+    margin-top: 27px;
 }
 
 .nav {
@@ -9,9 +10,9 @@
     justify-content: space-around;
     align-items: center;
     /* border-bottom: 2px solid black; */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.863);
     position: sticky;
-    height: 13vh;
+    height: auto;
     width: 100%;
 
 }
@@ -22,27 +23,26 @@
 }
 
 .nav a:hover {
-    text-decoration: underline;
     color: blue;
+    text-decoration: none;
 }
 
 .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-right: 2vw;
+    padding-right: 6vw;
 }
 
 .links li {
     margin-left: 71px;
     list-style: none;
-    font-size: 22px;
+    font-size: 1.2rem;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 .links li:hover{
     text-decoration: none;
-    font-size: x-large;
-    font-weight: bold;
     color: #000;
 }
 .input {
@@ -108,6 +108,9 @@
     top: 4vh;
     font-size: 2.6rem;
     height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .caption .text.first-text{
@@ -132,11 +135,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 7vh;
     width: 100%;
     background-color: white;
     border-left: 4px solid #4070F4;
-    animation: animate 4s steps(12) infinite;
+    animation: animate 4s steps(8) infinite;
 }
 
 @keyframes animate{
@@ -260,7 +263,7 @@ body {
     border: none;
     background-color: rgba(96, 90, 88, 0.233);
     color: white;
-    margin-right: 200px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,8 +289,7 @@ body {
 }
 
 .img img {
-    height: 131px;
-    width: 131px;
+    width: 6vw;
 }
 
 .pos {
@@ -325,7 +327,7 @@ body {
     position: fixed;
     top: 5vh;
     z-index: 10;
-    left: 95vw;
+    left: 92vw;
     height: 3vh;
     display: flex;
     align-items: center;
@@ -346,7 +348,7 @@ body {
 }
 
 .checkbox {
-    left: 0vw;
+    left: -2vw;
     top: 7px;
     opacity: 0;
     position: absolute;
@@ -384,12 +386,12 @@ body {
 
 .demo_video_container{
     background-color: #1e3770;
-    height: 175vh;
+    height: 185vh;
     width: 100%;
     border-radius: 45px;
     position: relative;
-    width: 93%;
-    left: 4vw;
+    width: 94%;
+    left: 3%;
 }
 
 .demo_video_container .title{
@@ -466,41 +468,47 @@ body {
   }
 
   .video_section{
+    margin-top: 70px;
     display: grid;
     align-items: center;
-    gap: 2vh;
+    gap: 4vh;
     position: absolute;
-    left: 5vw;
+    left: auto;
     top: 41vh;
   }
 
   .video_section .grid1{
-    margin-left: 10px;
-    width: 30vw;
+    margin-left: 15vh;
+    width: 70%;
     height: 40vh;
-    background-color: white; 
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
   }
 
   .video_section .grid1:nth-child(1){
     background-color: black;
+    border-radius: 10px;
   }
 
   .video_section .grid2{
-    margin-left: 10px;
-    width: 30vw;
+    margin-left: 65vh;
+    width: 70%;
     height: 40vh;
-    background-color: white;
-    left: 50vw;
+    background-color: black;
     position: relative;
+    border-radius: 10px;
   } 
 
   #firstVideo{
-    width: 29.9vw;
-    height: 40vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
   }
 
   .three_grid{
-    height: 70vh;
+    margin-top: 80px;
+    height: fit-content;
     gap: 2vh;
     display: flex;
     align-items: center;
@@ -510,47 +518,52 @@ body {
   .three_grid .container1{
     display: flex;
     align-items: baseline;
-    justify-content: center;
-    width: 20vw;
-    height: 55vh;
+    width: 25vw;
+    height: 500px;
     background-color: #8fdce7;
     border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
   } 
 
   .container1 span{
     position: absolute;
-    top: 262vh;
+    margin-top: 220px;
     background-color: #1e3770;
     color: white;
     width: 14vw;
     display: flex;
-    align-items: center;
     justify-content: center;
     border-radius: 20px;
+    margin-left: 5%;
   }
 
   .container1 ul{
     position: absolute;
-    top: 265vh;
+    margin-top: 250px;
     width: 15vw;
-    height: 28vh;
-    margin-top: 1vh;
+    height: auto;
     font-weight: 500;
+    margin-left: 5%;
   }
 
 
 .buypack {
+    margin-top: 50px;
     width: 100%;
     height: 80vh;
     background-color: white;
+    align-items: center;
 }
 
-.buypack h1{
+.buypack h3{
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 4rem;
+    width: 100%;
 }
 
 .buypack .linkss {
@@ -567,15 +580,16 @@ body {
 }
 
 .introduction_section{
-    height: 240vh;
-    width: 100%;
+    height: 250vh;
     border-radius: 45px;
     position: relative;
-    width: 93%;
-    left: 4vw;
+    width: 96%;
+    margin-top: 90px;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
-.introduction_section h1{
+.introduction_section h3{
     font-weight: 700;
     font-size: 4rem;
     display: flex;
@@ -586,19 +600,22 @@ body {
 .section1{
     padding: 30px;
     margin-bottom: 24px;
-    margin-left: 8vw;
-    width: 76vw;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
     height: 55vh;
     background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .section1:nth-child(2){
-    background-color: #dfdfdf;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
 }
 .section1:nth-child(3){
-    background-color: #dfdfdf;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
 }
 .section1:nth-child(4){
     background-color: #1E3770;
@@ -628,7 +645,10 @@ body {
 }
 
 .image_and_caption span{
-    margin: 0 16px 0px 7px;
+    margin-top: 0;
+    margin-left: 56px;
+    margin-bottom: 0px;
+    margin-right:  27px;
     font-weight: 500;
 }
 
@@ -647,20 +667,22 @@ body {
 
 .buypack .writingsection {
     width: 100%;
-    height: 89.3%;
+    height: 94.3%;
 }
 
 .writingsection ul {
-    height: 100%;
     padding: 1px 0px 0px 103px;
-    font-size: 26px;
+    font-size: 20px;
     position: absolute;
-    left: 5vw;
+    width: 100%;
 }
 
 .writingsection ul li {
     margin-top: 73px;
     font-weight: 600;
+    margin-left: 3%;
+    margin-right: auto;
+    width: 90%;
     color: rgb(7, 7, 194);
 }
 
@@ -817,14 +839,15 @@ h3 {
     background-color: rgb(22, 22, 150);
 }
 .text.first-text{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     top: 12vh;
+    margin-left: 0px;
 }
 
 .text.sec-text{
-    font-size: 2.5rem;
-    top: 12vh;
-    left: 18vw;
+    font-size: 4.5rem;
+    top: 15vh;
+    margin-left: 100px;
     height: 5vh;
-    width: 44vw;
+    width: 30vh;;
 }

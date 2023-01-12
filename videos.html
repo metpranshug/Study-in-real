@@ -5,31 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyInReal - Demo</title>
+    <title>Study In Real - Doubts</title>
+    <script
+        src="https://cdn.jsdelivr.net/gh/aframevr/aframe@090b5f8f0abe949ddcfdbbc14c75822322a2dd53/dist/aframe-master.min.js"></script>
+    <script src="index.js"></script>
+    <script
+        src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/master/dist/aframe-orbit-controls-component.min.js"></script>
+    <script src="info-msg.js"></script>
 
-    <link rel="shortcut icon" href="icons\ec511657cff446069fa7be0936807de6.png">
+    <link rel="shortcut icon" href="images\logo.png">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Quiz.css">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+
 </head>
 
 <body>
+    <div class="nav">
+        <h6 id="hh" style="display: none;"></h6>
+        <div class="links">
+            <li> <a class="upNavText" href="about.html">About</a> </li>
+            <li> <a class="upNavText" href="explore.html">Explore</a> </li>
+            <li class="createAcc"> <a href="#" id="userlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
+            <li class="Login"> <a href="#" id="signoutlink" class="upNavText nav-link   text-decoration-none text-white"></a> </li>
+            <li> <a class="upNavText" href="contact.html">Contact Us</a> </li>
+            <li> <a class="upNavText" href="help.html">Help</a> </li>
+            <!-- <li> <a href="">Login</a> </li> -->
+        </div>
+    </div>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <a href="index.html"> <img src="icons\ec511657cff446069fa7be0936807de6.png" alt=""> </a>
+                    <a href="index.html"> <img width="30px" height="30px" src="images/logo-large.png" alt=""> </a>
                 </span>
 
                 <div class="text logo-text"> <a href="index.html">
-                        <span class="name">Study</span>
-                        <span class="profession">In Real</span> </a>
+                        <span class="name" style="color: rgb(68, 161, 240);">Study</span>
+                        <span class="profession" style="color: rgb(68, 161, 240);">In Real</span> </a>
                 </div>
             </div>
 
@@ -46,36 +69,37 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="LandingPage.html">
-                            <i class='bx bxs-home icon' title="home"></i>
-                            <span class="text nav-text">Home</span>
+                        <a href="explore.html">
+                            <i class='bx bxs-home icon' title="Explore"></i>
+                            <span class="text nav-text">Explore</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="program.html">
+                        <a href="#">
                             <span class="material-symbols-outlined icon" title="Explantory Videos">play_circle</span>
                             <span class="text nav-text">Explantory Videos</span>
                         </a>
                     </li>
 
+
                     <li class="nav-link">
-                        <a href="saved.html">
+                        <a href="help.html">
                             <span class="material-symbols-outlined icon" title="Help">forum</span>
                             <span class="text nav-text">Help</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="Quiz.html">
+                        <a href="quizSelect.html">
                             <i class='bx bxs-sleepy icon' title="Quizzes"></i>
                             <span class="text nav-text">Quizzes</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="animated.html">
-                            <span class="material-symbols-outlined icon">question_mark</span>
+                        <a href="doubts.html">
+                            <span class="material-symbols-outlined icon" title="Doubts">question_mark</span>
                             <span class="text nav-text">Doubts</span>
                         </a>
                     </li>
@@ -83,21 +107,14 @@
 
 
                     <li class="nav-link">
-                        <a href="3dContent.html">
-                            <i class='bx bx-shape-polygon icon' title="content"></i>
+                        <a href="contentselect.html">
+                            <i class='bx bx-shape-polygon icon' title="3d Content"></i>
                             <span class="text nav-text">3d Content</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="game.html">
-                            <i class='bx bxs-game icon' title="Games"></i>
-                            <span class="text nav-text">Games On Topics</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="animated.html">
+                        <a href="notes.html">
                             <span class="material-symbols-outlined icon" title="Notes">description</span>
                             <span class="text nav-text">Notes</span>
                         </a>
@@ -111,13 +128,11 @@
                 </ul>
             </div>
         </div>
-
     </nav>
-
-
-    <iframe src="ElbowJointQuiz.html" style="margin-left: 4%;;width:96%;height: 950px;"></iframe>
+    <h1 style="text-align: center;">Videos</h1>
 
     <script src="script.js"></script>
+    <script src="navBarFirebase.js"></script>
 </body>
-
+    
 </html>
