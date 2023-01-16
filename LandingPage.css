@@ -64,7 +64,7 @@
     overflow: hidden;
 }
 
-.caption .Gets_Started{
+.caption .Gets_Started {
     position: absolute;
     height: 4vh;
     width: 9vw;
@@ -77,15 +77,23 @@
     border-radius: 5px;
 }
 
-.caption .Gets_Started:hover{
+.caption .Gets_Started:hover {
     background-color: #0572e7;
 }
 
-.caption .paragraph{
-    position: absolute;
-    width: 17vw;
-    font-size: 1.7rem;
-    top: 15vh;
+.caption-title {
+    height: 27vh;
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 6vw;
+    color: #05054f;
+}
+
+.paragraph {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1F6A74;
 }
 
 .caption .text{
@@ -140,6 +148,26 @@
     background-color: white;
     border-left: 4px solid #4070F4;
     animation: animate 3s steps(8) infinite;
+}
+
+.extraBtn {
+    height: 7vh;
+    width: 12vw;
+    position: absolute;
+    left: 6vw;
+    top: 44vh;
+    text-decoration: none;
+    list-style: none;
+}
+
+.extraBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+    font-size: 1.4rem;
 }
 
 @keyframes animate{
@@ -522,8 +550,8 @@ body {
     height: 500px;
     background-color: #8fdce7;
     border-radius: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    box-shadow: -2px 4px 38px 5px #9d9d9d;
   } 
 
   .container1 span{
@@ -535,7 +563,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    margin-left: 5%;
+    margin-left: 0;
   }
 
   .container1 ul{
@@ -544,7 +572,7 @@ body {
     width: 15vw;
     height: auto;
     font-weight: 500;
-    margin-left: 5%;
+    margin-left: 0;
   }
 
 
@@ -610,12 +638,12 @@ body {
 }
 
 .section1:nth-child(2){
-    background-color: rgba(0, 0, 0, 0.575);
-    color: white;
+    background-color: #dfdfdf;
+    color: black;
 }
 .section1:nth-child(3){
-    background-color: rgba(0, 0, 0, 0.575);
-    color: white;
+    background-color: #dfdfdf;
+    color: black;
 }
 .section1:nth-child(4){
     background-color: #1E3770;

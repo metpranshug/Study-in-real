@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In</title>
+    <title>Log In</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="drop">
             <div class="content">
-                <h3>Log-In</h3>
+                <h3>Log In</h3>
                 <div class="form">
                     <div class="inputBox">
                         <input type="text" id="emailInp" placeholder="email">
@@ -40,7 +40,7 @@
             </div>
         </div>
         <!-- <a href="#" class="btns">Forget password</a> -->
-        <a href="signUpPage.html" class="btns signup">Sign-up</a>
+        <a href="signUpPage.html" class="btns signup">Sign up</a>
         <a href="forgot.html"><button type="submit" class=" btns1" id="withGoogle">Forgotten Password?</button></a>
     </div>
 
@@ -63,7 +63,7 @@
         });
         const db = firebaseApp.firestore();
         const auth = firebaseApp.auth();
-
+        
         const email = document.getElementById("emailInp")
         const pass = document.getElementById("passInp")
         const submit = document.getElementById("sub_btn")
@@ -72,7 +72,7 @@
             auth.signInWithEmailAndPassword(email.value, pass.value).then(()=>{
                 login();
             }).catch(()=>{
-                alert("This email-id is not Registered")
+                alert("Email not Registered")
                 console.log("failed");
             })
         }

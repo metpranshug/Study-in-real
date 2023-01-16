@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat' ;
 }
 
 .material-symbols-outlined {
@@ -24,7 +24,7 @@
 
 body {
   /* min-height: 100vh; */
-  background-color: #e4e9f7;
+  background-color: white;
   transition: var(--tran-05);
   transition-duration: 1s;
 }
@@ -58,10 +58,13 @@ body {
   height: 100%;
   width: 264px;
   padding: 10px 14px;
-  background: #FFF;
+  background: white;
   transition: var(--tran-05);
   z-index: 100;
   box-shadow: 0px 0px 8px 0px;
+}
+.dark-mode .sidebar{
+  background-color: #252525;
 }
 
 .sidebar.close {
@@ -349,9 +352,6 @@ model-viewer {
 }
 
 .upNavUl .upNavLi .upNavText:hover {
-  color: #695CFE;
-}
-.nav .links li .upNavText:hover {
   color: #695CFE;
 }
 
@@ -658,6 +658,9 @@ form button:hover {
   height: 27vh;
   margin-right: 40px;
 }
+.product-brand{
+  opacity: 0;
+}
 
 .product-image {
   position: relative;
@@ -899,7 +902,7 @@ body {
 
 /* dark mode */
 body {
-  background-color: #e4e9f7;
+  background-color: white;
   color: #181818;
   transition-duration: 1s;
 }
@@ -1072,6 +1075,13 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+}
+.sun {
+  fill: black;
+}
+
+.dark-mode .sun {
+  fill: white;
 }
 
 

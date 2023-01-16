@@ -2,15 +2,15 @@ const text = document.querySelector(".sec-text")
 const textLoad = () =>{
   setTimeout(() => {
     text.textContent = "IN REAL" 
-    text.style.color= "#4070f4" 
+    text.style.color= "rgb(22, 22, 150)" 
   }, 0);
   setTimeout(() => {
     text.textContent = "IN 3D" 
-    text.style.color= "#F53030"
+    text.style.color= "#ffcb00"
   }, 3000);
   setTimeout(() => {
     text.textContent = "BETTER"
-    text.style.color= "#ffcb00" 
+    text.style.color= "#4070f4" 
   }, 6000);
 }
 textLoad()

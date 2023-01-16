@@ -45,13 +45,18 @@
         </div>
 
         <div class="caption">
-            <span class="text first-text" style="color: #0069d9;">STUDY<p class="paragraph" style="color: #0069d9;">Explore Your Academics In A New Way Like Never Before!</p>
+            <span class="text first-text" style="color: #0069d9;">STUDY
             </span><span class="text sec-text"></span>
 
             <div class="mod">
-                <model-viewer class="navmodel" src="models/math/scene.gltf" auto-rotate ar shadow-intensity="1"
-                    touch-action="pan-y" camera-controls title="tap and do some operation"></model-viewer>
+                <model-viewer class="navmodel" src="models/scene.gltf" auto-rotate ar shadow-intensity="1"
+                    touch-action="pan-y" camera-controls></model-viewer>
             </div>
+            <li class="extraBtn"><a href="#" id="userlink1" class="nav-link   text-decoration-none text-white"></a></li>
+        </div>
+        <div class="caption-title">
+        <p class="paragraph">Explore Your Academics In A New Way Like Never Before!</p>
+    </div>
         </div>
         <div class="demo_video_container">
             <div class="title"><span>The Only Platform Which Gives You The Opportunity to Explore the Academic Concepts
@@ -240,6 +245,16 @@
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="landingpage.js"></script>
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"2da7bc04455abc8b9a3bd1b5683feff1f","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
 </body>
 
 </html>

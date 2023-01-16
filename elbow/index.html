@@ -8,7 +8,9 @@
     <script src="info-panel.js"></script>
   </head>
   <body>
+    <div id="vr-btn"></div>
     <a-scene 
+    vr-mode-ui="#vr-btn"
     background="color: #212"
       environment
       cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
@@ -95,16 +97,11 @@
           panel
           visible="false"
           scale="0.0001 0.0001 0.0001"
-          geometry="primitive: box; width: 1.5; height: 0.8; depth:0"
+          geometry="primitive: box; width: 1; height: 0.3; depth:0"
           material="color: #333333; shader: flat; transparent: false">
         <a-entity id="partName"
-            position="-0.25 0.25 0"
+            position="-0.15 -0.01 0"
             text="shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white;"></a-entity>
-          <a-entity id="partDescription"
-            position="-0.65 0.11 0"
-            scale="1.4 1.4 1.4"
-            text="baseline: top; shader: msdf; anchor: left; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white;"></a-entity>
-        </a-entity>
     </a-scene>
   </body>
 </html>
